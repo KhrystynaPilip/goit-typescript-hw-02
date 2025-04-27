@@ -1,8 +1,12 @@
 import toast from "react-hot-toast";
-import { useEffect } from "react";
+import { FC, useEffect } from "react";
 
-export default function ErrorMessage() {
+const ErrorMessage: FC = () => {
   useEffect(() => {
     toast.error("Something went wrong, try it again...", { duration: 3000 });
   }, []);
-}
+
+  return null;
+};
+
+export default ErrorMessage;
